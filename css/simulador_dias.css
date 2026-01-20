@@ -1,0 +1,43 @@
+/* Estilos do Simulador de Dias */
+.simulador-dias {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.simulador-dias h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.simulador-dias .btn-group {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.simulador-dias .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .simulador-dias {
+        padding: 1rem !important;
+    }
+
+    .simulador-dias .d-flex {
+        flex-direction: column;
+    }
+
+    .simulador-dias .btn-group {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .simulador-dias .btn {
+        flex: 1;
+        font-size: 0.75rem;
+    }
+}

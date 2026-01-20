@@ -11,9 +11,12 @@ nav {
     background-position: center;
     height: 300px;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-size: 6rem;
 }
+
 main {
     min-height: 85vh;
 }
+
