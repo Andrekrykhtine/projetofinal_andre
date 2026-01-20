@@ -16,10 +16,11 @@
         <nav class="navbar sticky-top navbar-dark shadow-lg border-bottom border-3 border-white">
             <div class="container">
                 <div class="container-fluid w-100">
-                    <a class="navbar-brand fw-bold fs-1 fs-lg-1 display-6 lh-1" href="#">
-                        <i class="bi bi-flower3 me-3 fs-1"></i>Minhas Plantas
+                    <a class="navbar-brand fw-bold display-6 lh-1" href="#">
+                        <i class="bi bi-flower3 me-3"></i>Minhas Plantas
                     </a>
-                    <p class="text-white p-3 fs-4 fw-bold">Cadastre suas plantas e auxilie no cuidado delas!</p>
+                    <p class="text-white p-3 fs-1 fw-bold">Cadastre suas plantas para mantê-las sempre lindas e
+                        saudáveis!</p>
                 </div>
             </div>
         </nav>
@@ -41,30 +42,50 @@
                     <form id="formPlanta">
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="nome" class="form-label">Nome da Planta:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Ex.: Espada de São Jorge"
+                                <label for="nome" class="form-label fs-5 mb-2">Nome da Planta:</label>
+                                <input type="text" class="form-control fs-5 mb-2" id="nome" placeholder="Ex.: Espada de São Jorge"
                                     required>
                             </div>
                             <div class="mb-3">
-                                <label for="foto" class="form-label">Foto da Planta:</label>
-                                <input type="file" class="form-control" id="foto" accept="image/*" required>
+                                <label for="foto" class="form-label fs-5 mb-2">Foto da Planta:</label>
+                                <input type="file" class="form-control fs-5 mb-2" id="foto" accept="image/*" required>
                                 <img id="previewFoto" src="" alt="Preview da foto" class="img-thumbnail mt-2"
                                     style="max-width: 200px; max-height: 200px; display: none;">
                             </div>
-                            <div class="mb-3">
-                                <label for="frequenciaRega" class="form-label">Frequência de Rega por semana:</label>
-                                <input type="number" min="1" max="7" class="form-control" id="frequenciaRega"
-                                    placeholder="X dias na semana (1 a 7)" required>
+                            <!-- Frequência Rega (1-7 dias/semana) -->
+                            <div class="mb-4">
+                                <label for="frequenciaRega" class="form-label fs-5 mb-2">
+                                    <i class="bi bi-droplet-half text-primary me-2"></i>Frequencia de Rega:
+                                </label>
+                                <select class="form-select form-select-lg shadow-sm" id="frequenciaRega" required>
+                                    <option value="" disabled selected>Escolha...</option>
+                                    <option value="1">Todos os dias </option>
+                                    <option value="2">Dia sim dia não</option>
+                                    <option value="3">A cada 2 dias</option>
+                                    <option value="4">A cada 3 dias</option>
+                                    <option value="5">A cada 4 dias</option>
+                                    <option value="6">A cada 5 dias</option>
+                                    <option value="7">1x por semana </option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="frequenciaAdubacao" class="form-label fs-5 mb-2">
+                                    <i class="bi bi-basket3 text-success me-2"></i>Frequencia de Adubo:
+                                </label>
+                                <select class="form-select form-select-lg shadow-sm" id="frequenciaAdubacao" required>
+                                    <option value="" disabled selected>Escolha...</option>
+                                    <option value="1">1x por mês</option>
+                                    <option value="2">2x por mês</option>
+                                    <option value="3">3x por mês</option>
+                                    <option value="4">4x por mês</option>
+                                    <option value="6">6x por mês (quinzenal)</option>
+                                    <option value="12">12x por mês (semanal)</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                                <label for="frequenciaAdubacao" class="form-label">Frequência de Adubação por
-                                    mês:</label>
-                                <input type="number" min="1" max="12" class="form-control" id="frequenciaAdubacao"
-                                    placeholder="X vezes por mês (1 a 12)" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="observacoes" class="form-label">Observações:</label>
-                                <input type="text" class="form-control" id="observacoes"
+                                <label for="observacoes" class="form-label fs-5 mb-2">Observações:</label>
+                                <input type="text" class="form-control fs-5 mb-2" id="observacoes"
                                     placeholder="Ex.: Gosta de sol indireto">
                             </div>
                         </div>
@@ -80,20 +101,20 @@
 
         <div id="plantasContainer" class="row g-4 mt-4"></div>
     </main>
-   <footer class="bg-success text-light py-5 mt-auto">
-    <div class="container text-center">
-        <p class="fs-5 mb-4 opacity-75">Siga nas redes!</p>
-        <div class="d-flex justify-content-center gap-4 mb-4">
-            <a href="https://facebook.com" class="btn btn-outline-light btn-lg px-4 hover-scale" target="_blank">
-                <i class="bi bi-facebook fs-3 me-1"></i>Facebook
-            </a>
-            <a href="https://instagram.com" class="btn btn-outline-light btn-lg px-4 hover-scale" target="_blank">
-                <i class="bi bi-instagram fs-3 me-1"></i>Instagram
-            </a>
+    <footer class="bg-success text-light py-5 mt-auto">
+        <div class="container text-center">
+            <p class="fs-5 mb-4 opacity-75">Siga nas redes!</p>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="https://facebook.com" class="btn btn-outline-light btn-lg px-4 hover-scale" target="_blank">
+                    <i class="bi bi-facebook fs-3 me-1"></i>Facebook
+                </a>
+                <a href="https://instagram.com" class="btn btn-outline-light btn-lg px-4 hover-scale" target="_blank">
+                    <i class="bi bi-instagram fs-3 me-1"></i>Instagram
+                </a>
+            </div>
+            <p>&copy; 2026 Minhas Plantas</p>
         </div>
-        <p>&copy; 2026 Minhas Plantas</p>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
