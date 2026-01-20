@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/simulador_dias.css">
 </head>
 
 <body class="bg-light">
@@ -43,8 +44,8 @@
                         <div class="modal-body">
                             <div class="mb-3">
                                 <label for="nome" class="form-label fs-5 mb-2">Nome da Planta:</label>
-                                <input type="text" class="form-control fs-5 mb-2" id="nome" placeholder="Ex.: Espada de São Jorge"
-                                    required>
+                                <input type="text" class="form-control fs-5 mb-2" id="nome"
+                                    placeholder="Ex.: Espada de São Jorge" required>
                             </div>
                             <div class="mb-3">
                                 <label for="foto" class="form-label fs-5 mb-2">Foto da Planta:</label>
@@ -52,7 +53,6 @@
                                 <img id="previewFoto" src="" alt="Preview da foto" class="img-thumbnail mt-2"
                                     style="max-width: 200px; max-height: 200px; display: none;">
                             </div>
-                            <!-- Frequência Rega (1-7 dias/semana) -->
                             <div class="mb-4">
                                 <label for="frequenciaRega" class="form-label fs-5 mb-2">
                                     <i class="bi bi-droplet-half text-primary me-2"></i>Frequencia de Rega:
@@ -119,6 +119,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="js/simulador-dias.js"></script>
     <script src="js/script.js"></script>
 </body>
 
