@@ -1,22 +1,53 @@
-:root {
-    --primary-color: #2ecc71;
-    --secondary-color: #27ae60;
-    --dark-color: #2c3e50;
-    --light-color: #ecf0f1;
-}
-
 nav {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/plantas.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/imagemHeader.jpg');
     background-size: cover;
     background-position: center;
-    height: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand {
-    font-size: 6rem;
+    font-size: 3rem;
+    transition: font-size 0.3s ease;
+}
+
+.header-subtitle {
+    font-size: 1.25rem;
+    transition: font-size 0.3s ease;
+}
+
+.newplantbtn {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 5rem;
+    }
+
+    .header-subtitle {
+        font-size: 2rem;
+    }
+
+    .newplantbtn {
+        font-size: 1.3rem;
+        padding: 1.5rem 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 6rem;
+    }
+
+    .header-subtitle {
+        font-size: 2.5rem;
+    }
 }
 
 main {
     min-height: 85vh;
 }
-
