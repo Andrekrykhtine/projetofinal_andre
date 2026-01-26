@@ -59,7 +59,6 @@ document
       adubo: document.getElementById("frequenciaAdubacao").value,
       obs: document.getElementById("observacoes").value || "Sem observações",
       dataCadastro: dataAtualBR(),
-      dataCadastro: dataAtualBR(),
       proximaRega: primeiraProximaRega.toLocaleDateString("pt-BR"),
       proximaAdubacao: primeiraProximaAdubacao.toLocaleDateString("pt-BR"),
     };
